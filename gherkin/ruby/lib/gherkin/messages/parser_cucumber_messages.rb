@@ -39,7 +39,7 @@ module Gherkin
         end
       end
     
-    private
+      private
 
       def yield_error_attachments(y, errors, uri)
         errors.each do |err|
