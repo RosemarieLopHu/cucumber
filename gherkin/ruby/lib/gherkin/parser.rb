@@ -64,20 +64,16 @@ module Gherkin
 
       @ast_builder.reset
       token_matcher.reset
-      context = ParserContext.new(
-        token_scanner,
-        token_matcher,
-        [],
-        []
-      )
+      context = ParserContext.new(token_scanner, token_matcher, [], [])
 
-      start_rule(context, :GherkinDocument);
+      start_rule(context, :GherkinDocument)
       state = 0
       token = nil
-      begin
+      loop do
         token = read_token(context)
         state = match_token(state, token, context)
-      end until(token.eof?)
+        break unless token.eof?
+      end
 
       end_rule(context, :GherkinDocument)
 

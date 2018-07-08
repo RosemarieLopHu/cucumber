@@ -22,11 +22,12 @@ module Gherkin
       def varint(io)
         # https://github.com/ruby-protobuf/protobuf/blob/master/lib/protobuf/varint_pure.rb
         value = index = 0
-        begin
+        loop do
           byte = io.readbyte
           value |= (byte & 0x7f) << (7 * index)
           index += 1
-        end while (byte & 0x80).nonzero?
+          break unless (byte & 0x80).nonzero?
+        end
         value
       end
     end
