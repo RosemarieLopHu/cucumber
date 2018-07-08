@@ -3393,7 +3393,7 @@ module Gherkin
           break
         end
 
-        break unless (false || match_Empty(context, token)|| match_Comment(context, token)|| match_TagLine(context, token))
+        break unless (false || match_Empty(context, token) || match_Comment(context, token) || match_TagLine(context, token))
       end
 
       context.token_queue.concat(queue)

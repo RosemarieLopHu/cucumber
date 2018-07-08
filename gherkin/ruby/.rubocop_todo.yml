@@ -6,18 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 7
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment.
-Layout/SpaceAroundOperators:
-  Exclude:
-    - 'bin/gherkin'
-    - 'bin/gherkin-generate-tokens'
-    - 'lib/gherkin/errors.rb'
-    - 'lib/gherkin/gherkin_line.rb'
-    - 'lib/gherkin/parser.rb'
-    - 'spec/capture_warnings.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBrackets.
