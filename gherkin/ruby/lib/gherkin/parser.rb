@@ -944,7 +944,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        start_rule(context, :ExamplesDefinition);
+          start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
         return 17
@@ -1018,7 +1018,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Description);
+          end_rule(context, :Description);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
@@ -1093,7 +1093,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        start_rule(context, :ExamplesDefinition);
+          start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
         return 17
@@ -1171,7 +1171,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Step);
+          end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
@@ -1254,7 +1254,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :DataTable);
+          end_rule(context, :DataTable);
         end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -1374,7 +1374,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Examples);
+          end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -1460,7 +1460,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Description);
+          end_rule(context, :Description);
         end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
@@ -1547,7 +1547,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Examples);
+          end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -1625,7 +1625,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :ExamplesTable);
+          end_rule(context, :ExamplesTable);
         end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
@@ -2235,7 +2235,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        start_rule(context, :ExamplesDefinition);
+          start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
         return 36
@@ -2311,7 +2311,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Description);
+          end_rule(context, :Description);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
@@ -2388,7 +2388,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        start_rule(context, :ExamplesDefinition);
+          start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
         return 36
@@ -2468,7 +2468,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Step);
+          end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
         build(context, token);
@@ -2553,7 +2553,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :DataTable);
+          end_rule(context, :DataTable);
         end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -2675,7 +2675,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Examples);
+          end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -2763,7 +2763,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Description);
+          end_rule(context, :Description);
         end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
@@ -2852,7 +2852,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :Examples);
+          end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -2932,7 +2932,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :ExamplesTable);
+          end_rule(context, :ExamplesTable);
         end_rule(context, :Examples);
         end_rule(context, :ExamplesDefinition);
         start_rule(context, :ExamplesDefinition);
@@ -3043,7 +3043,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :DocString);
+          end_rule(context, :DocString);
         end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
@@ -3232,7 +3232,7 @@ module Gherkin
       end
       if match_TagLine(context, token)
         if lookahead_0(context, token)
-        end_rule(context, :DocString);
+          end_rule(context, :DocString);
         end_rule(context, :Step);
         start_rule(context, :ExamplesDefinition);
         start_rule(context, :Tags);
