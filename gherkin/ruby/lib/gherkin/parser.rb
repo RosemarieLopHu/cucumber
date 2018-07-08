@@ -5,7 +5,6 @@ require 'gherkin/token_scanner'
 require 'gherkin/errors'
 
 module Gherkin
-
   RULE_TYPE = [
     :None,
     :_EOF, # #EOF
