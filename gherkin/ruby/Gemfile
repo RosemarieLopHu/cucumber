@@ -3,9 +3,9 @@ gemspec
 
 local_cucumber_messages = File.dirname(__FILE__) + '/../../messages/ruby'
 key, location = if File.directory?(local_cucumber_messages)
-  ["path", local_cucumber_messages]
-else
-  ["git", 'https://github.com/cucumber/cucumber-messages-ruby']
-end
+                  ["path", local_cucumber_messages]
+                else
+                  ["git", 'https://github.com/cucumber/cucumber-messages-ruby']
+                end
 
 gem 'cucumber-messages', key.to_sym => location
