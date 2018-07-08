@@ -14,7 +14,7 @@ module Gherkin
         args.push('--no-ast') unless @print_ast
         args.push('--no-pickles') unless @print_pickles
         args = args.concat(@paths)
-        stdin, stdout, stderr, wait_thr = Open3.popen3(*args)
+        _stdin, stdout, _stderr, _wait_thr = Open3.popen3(*args)
         ProtobufCucumberMessages.new(stdout).messages
       end
     end
