@@ -62,11 +62,11 @@ module Gherkin
           @paths.each do |path|
             source = Cucumber::Messages::Source.new({
                                                       uri: path,
-              data: File.open(path, 'r:UTF-8', &:read),
-              media: Cucumber::Messages::Media.new({
-                                                     encoding: 'UTF-8',
-                content_type: 'text/x.cucumber.gherkin+plain'
-                                                   })
+                                                      data: File.open(path, 'r:UTF-8', &:read),
+                                                      media: Cucumber::Messages::Media.new({
+                                                                                             encoding: 'UTF-8',
+                                                                                             content_type: 'text/x.cucumber.gherkin+plain'
+                                                                                           })
                                                     })
             y.yield(source)
           end

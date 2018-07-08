@@ -26,7 +26,7 @@ module Gherkin
         @comments.push(Cucumber::Messages::Comment.new(
                          location: get_location(token, 0),
                          text: token.matched_text
-        ))
+                       ))
       else
         current_node.add(token.matched_type, token)
       end
@@ -58,7 +58,7 @@ module Gherkin
           tags.push(Cucumber::Messages::Tag.new(
                       location: get_location(token, tag_item.column),
                       name: tag_item.text
-          ))
+                    ))
         end
       end
 
