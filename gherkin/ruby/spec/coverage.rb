@@ -1,5 +1,5 @@
 require 'simplecov'
-formatters = [ SimpleCov::Formatter::HTMLFormatter ]
+formatters = [SimpleCov::Formatter::HTMLFormatter]
 
 if ENV['TRAVIS']
   require 'coveralls'

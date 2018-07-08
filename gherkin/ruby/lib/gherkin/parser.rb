@@ -117,97 +117,97 @@ module Gherkin
       context.token_queue.any? ? context.token_queue.shift : context.token_scanner.read
     end
 
-    def match_EOF( context, token)
+    def match_EOF(context, token)
       return handle_external_error(context, false) do
         context.token_matcher.match_EOF(token)
       end
     end
 
-    def match_Empty( context, token)
+    def match_Empty(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_Empty(token)
       end
     end
 
-    def match_Comment( context, token)
+    def match_Comment(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_Comment(token)
       end
     end
 
-    def match_TagLine( context, token)
+    def match_TagLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_TagLine(token)
       end
     end
 
-    def match_FeatureLine( context, token)
+    def match_FeatureLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_FeatureLine(token)
       end
     end
 
-    def match_RuleLine( context, token)
+    def match_RuleLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_RuleLine(token)
       end
     end
 
-    def match_BackgroundLine( context, token)
+    def match_BackgroundLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_BackgroundLine(token)
       end
     end
 
-    def match_ScenarioLine( context, token)
+    def match_ScenarioLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_ScenarioLine(token)
       end
     end
 
-    def match_ExamplesLine( context, token)
+    def match_ExamplesLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_ExamplesLine(token)
       end
     end
 
-    def match_StepLine( context, token)
+    def match_StepLine(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_StepLine(token)
       end
     end
 
-    def match_DocStringSeparator( context, token)
+    def match_DocStringSeparator(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_DocStringSeparator(token)
       end
     end
 
-    def match_TableRow( context, token)
+    def match_TableRow(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_TableRow(token)
       end
     end
 
-    def match_Language( context, token)
+    def match_Language(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_Language(token)
       end
     end
 
-    def match_Other( context, token)
+    def match_Other(context, token)
       return false if token.eof?
       return handle_external_error(context, false) do
         context.token_matcher.match_Other(token)

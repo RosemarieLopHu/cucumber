@@ -12,12 +12,12 @@ module CaptureWarnings
     end
 
     if other_warnings.any?
-      puts "#{ other_warnings.count } non-gherkin warnings detected, set VIEW_OTHER_WARNINGS=true to see them."
+      puts "#{other_warnings.count} non-gherkin warnings detected, set VIEW_OTHER_WARNINGS=true to see them."
       print_warnings('other', other_warnings) if ENV['VIEW_OTHER_WARNINGS']
     end
 
     if project_warnings.any?
-      puts "#{ project_warnings.count } gherkin warnings detected"
+      puts "#{project_warnings.count} gherkin warnings detected"
       print_warnings('gherkin', project_warnings)
       fail "Please remove all gherkin warnings."
     end
