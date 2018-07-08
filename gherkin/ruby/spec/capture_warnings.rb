@@ -45,7 +45,7 @@ module CaptureWarnings
     STDERR.reopen(old_stderr)
     pipe_w.close
     reader.join
-    return error.split("\n")
+    error.split("\n")
   end
 
   def print_warnings(type, warnings)
