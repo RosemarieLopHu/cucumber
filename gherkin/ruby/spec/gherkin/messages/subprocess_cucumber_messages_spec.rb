@@ -6,8 +6,8 @@ module Gherkin
     describe SubprocessCucumberMessages do
       it "works" do
         cucumber_messages = SubprocessCucumberMessages.new(
-          "../go/bin/gherkin", 
-          ["testdata/good/minimal.feature"], 
+          "../go/bin/gherkin",
+          ["testdata/good/minimal.feature"],
           true, true, true
         )
         messages = cucumber_messages.messages.to_a

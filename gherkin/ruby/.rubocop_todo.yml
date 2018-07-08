@@ -6,27 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: final_newline, final_blank_line
-Layout/TrailingBlankLines:
-  Exclude:
-    - 'Gemfile'
-    - 'bin/gherkin'
-    - 'lib/gherkin/messages/parser_cucumber_messages.rb'
-
-# Offense count: 60
-# Cop supports --auto-correct.
-# Configuration parameters: AllowInHeredoc.
-Layout/TrailingWhitespace:
-  Exclude:
-    - 'lib/gherkin/messages/parser_cucumber_messages.rb'
-    - 'lib/gherkin/messages/protobuf_cucumber_messages.rb'
-    - 'lib/gherkin/messages/subprocess_cucumber_messages.rb'
-    - 'lib/gherkin/parser.rb'
-    - 'spec/gherkin/messages/subprocess_cucumber_messages_spec.rb'
-
 # Offense count: 1
 # Configuration parameters: AllowSafeAssignment.
 Lint/AssignmentInCondition:

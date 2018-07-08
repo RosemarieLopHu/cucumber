@@ -10,15 +10,15 @@ module Gherkin
         @parser = Gherkin::Parser.new
         @compiler = Pickles::Compiler.new
       end
-      
+
       def messages
         Enumerator.new do |y|
           sources.each do |source|
             y.yield(Cucumber::Messages::Wrapper.new(source: source)) if @print_source
-            
+
             begin
               gherkin_document = nil
-              
+
               if @print_ast
                 gherkin_document = build_gherkin_document(source)
                 y.yield(Cucumber::Messages::Wrapper.new(gherkinDocument: gherkin_document))
@@ -38,7 +38,7 @@ module Gherkin
           end
         end
       end
-    
+
       private
 
       def yield_error_attachments(y, errors, uri)

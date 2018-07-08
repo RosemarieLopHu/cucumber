@@ -352,7 +352,7 @@ module Gherkin
         build(context, token);
         return 0
       end
-      
+
       state_comment = "State: 0 - Start"
       token.detach
       expected_tokens = ["#EOF", "#Language", "#TagLine", "#FeatureLine", "#Comment", "#Empty"]
@@ -381,7 +381,7 @@ module Gherkin
         build(context, token);
         return 1
       end
-      
+
       state_comment = "State: 1 - GherkinDocument:0>Feature:0>FeatureHeader:0>#Language:0"
       token.detach
       expected_tokens = ["#TagLine", "#FeatureLine", "#Comment", "#Empty"]
@@ -410,7 +410,7 @@ module Gherkin
         build(context, token);
         return 2
       end
-      
+
       state_comment = "State: 2 - GherkinDocument:0>Feature:0>FeatureHeader:1>Tags:0>#TagLine:0"
       token.detach
       expected_tokens = ["#TagLine", "#FeatureLine", "#Comment", "#Empty"]
@@ -468,7 +468,7 @@ module Gherkin
         build(context, token);
         return 4
       end
-      
+
       state_comment = "State: 3 - GherkinDocument:0>Feature:0>FeatureHeader:2>#FeatureLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -527,7 +527,7 @@ module Gherkin
         build(context, token);
         return 4
       end
-      
+
       state_comment = "State: 4 - GherkinDocument:0>Feature:0>FeatureHeader:3>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -580,7 +580,7 @@ module Gherkin
         build(context, token);
         return 5
       end
-      
+
       state_comment = "State: 5 - GherkinDocument:0>Feature:0>FeatureHeader:3>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -637,7 +637,7 @@ module Gherkin
         build(context, token);
         return 7
       end
-      
+
       state_comment = "State: 6 - GherkinDocument:0>Feature:1>Background:0>#BackgroundLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -695,7 +695,7 @@ module Gherkin
         build(context, token);
         return 7
       end
-      
+
       state_comment = "State: 7 - GherkinDocument:0>Feature:1>Background:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -747,7 +747,7 @@ module Gherkin
         build(context, token);
         return 8
       end
-      
+
       state_comment = "State: 8 - GherkinDocument:0>Feature:1>Background:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -814,7 +814,7 @@ module Gherkin
         build(context, token);
         return 9
       end
-      
+
       state_comment = "State: 9 - GherkinDocument:0>Feature:1>Background:2>Step:0>#StepLine:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#DocStringSeparator", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -880,7 +880,7 @@ module Gherkin
         build(context, token);
         return 10
       end
-      
+
       state_comment = "State: 10 - GherkinDocument:0>Feature:1>Background:2>Step:1>StepArg:0>__alt0:0>DataTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -910,7 +910,7 @@ module Gherkin
         build(context, token);
         return 11
       end
-      
+
       state_comment = "State: 11 - GherkinDocument:0>Feature:2>ScenarioDefinition:0>Tags:0>#TagLine:0"
       token.detach
       expected_tokens = ["#TagLine", "#ScenarioLine", "#Comment", "#Empty"]
@@ -985,7 +985,7 @@ module Gherkin
         build(context, token);
         return 13
       end
-      
+
       state_comment = "State: 12 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:0>#ScenarioLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1063,7 +1063,7 @@ module Gherkin
         build(context, token);
         return 13
       end
-      
+
       state_comment = "State: 13 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1133,7 +1133,7 @@ module Gherkin
         build(context, token);
         return 14
       end
-      
+
       state_comment = "State: 14 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -1220,7 +1220,7 @@ module Gherkin
         build(context, token);
         return 15
       end
-      
+
       state_comment = "State: 15 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:2>Step:0>#StepLine:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#DocStringSeparator", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -1308,7 +1308,7 @@ module Gherkin
         build(context, token);
         return 16
       end
-      
+
       state_comment = "State: 16 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:0>DataTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -1338,7 +1338,7 @@ module Gherkin
         build(context, token);
         return 17
       end
-      
+
       state_comment = "State: 17 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:0>Tags:0>#TagLine:0"
       token.detach
       expected_tokens = ["#TagLine", "#ExamplesLine", "#Comment", "#Empty"]
@@ -1425,7 +1425,7 @@ module Gherkin
         build(context, token);
         return 19
       end
-      
+
       state_comment = "State: 18 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:0>#ExamplesLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1515,7 +1515,7 @@ module Gherkin
         build(context, token);
         return 19
       end
-      
+
       state_comment = "State: 19 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1597,7 +1597,7 @@ module Gherkin
         build(context, token);
         return 20
       end
-      
+
       state_comment = "State: 20 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -1684,7 +1684,7 @@ module Gherkin
         build(context, token);
         return 21
       end
-      
+
       state_comment = "State: 21 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:2>ExamplesTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -1744,7 +1744,7 @@ module Gherkin
         build(context, token);
         return 23
       end
-      
+
       state_comment = "State: 22 - GherkinDocument:0>Feature:3>Rule:0>RuleHeader:0>#RuleLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1805,7 +1805,7 @@ module Gherkin
         build(context, token);
         return 23
       end
-      
+
       state_comment = "State: 23 - GherkinDocument:0>Feature:3>Rule:0>RuleHeader:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1860,7 +1860,7 @@ module Gherkin
         build(context, token);
         return 24
       end
-      
+
       state_comment = "State: 24 - GherkinDocument:0>Feature:3>Rule:0>RuleHeader:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#BackgroundLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -1919,7 +1919,7 @@ module Gherkin
         build(context, token);
         return 26
       end
-      
+
       state_comment = "State: 25 - GherkinDocument:0>Feature:3>Rule:1>Background:0>#BackgroundLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -1979,7 +1979,7 @@ module Gherkin
         build(context, token);
         return 26
       end
-      
+
       state_comment = "State: 26 - GherkinDocument:0>Feature:3>Rule:1>Background:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -2033,7 +2033,7 @@ module Gherkin
         build(context, token);
         return 27
       end
-      
+
       state_comment = "State: 27 - GherkinDocument:0>Feature:3>Rule:1>Background:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -2102,7 +2102,7 @@ module Gherkin
         build(context, token);
         return 28
       end
-      
+
       state_comment = "State: 28 - GherkinDocument:0>Feature:3>Rule:1>Background:2>Step:0>#StepLine:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#DocStringSeparator", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -2170,7 +2170,7 @@ module Gherkin
         build(context, token);
         return 29
       end
-      
+
       state_comment = "State: 29 - GherkinDocument:0>Feature:3>Rule:1>Background:2>Step:1>StepArg:0>__alt0:0>DataTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -2200,7 +2200,7 @@ module Gherkin
         build(context, token);
         return 30
       end
-      
+
       state_comment = "State: 30 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:0>Tags:0>#TagLine:0"
       token.detach
       expected_tokens = ["#TagLine", "#ScenarioLine", "#Comment", "#Empty"]
@@ -2277,7 +2277,7 @@ module Gherkin
         build(context, token);
         return 32
       end
-      
+
       state_comment = "State: 31 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:0>#ScenarioLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -2357,7 +2357,7 @@ module Gherkin
         build(context, token);
         return 32
       end
-      
+
       state_comment = "State: 32 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -2429,7 +2429,7 @@ module Gherkin
         build(context, token);
         return 33
       end
-      
+
       state_comment = "State: 33 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -2518,7 +2518,7 @@ module Gherkin
         build(context, token);
         return 34
       end
-      
+
       state_comment = "State: 34 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:2>Step:0>#StepLine:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#DocStringSeparator", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -2608,7 +2608,7 @@ module Gherkin
         build(context, token);
         return 35
       end
-      
+
       state_comment = "State: 35 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:0>DataTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -2638,7 +2638,7 @@ module Gherkin
         build(context, token);
         return 36
       end
-      
+
       state_comment = "State: 36 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:0>Tags:0>#TagLine:0"
       token.detach
       expected_tokens = ["#TagLine", "#ExamplesLine", "#Comment", "#Empty"]
@@ -2727,7 +2727,7 @@ module Gherkin
         build(context, token);
         return 38
       end
-      
+
       state_comment = "State: 37 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:0>#ExamplesLine:0"
       token.detach
       expected_tokens = ["#EOF", "#Empty", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -2819,7 +2819,7 @@ module Gherkin
         build(context, token);
         return 38
       end
-      
+
       state_comment = "State: 38 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:1>DescriptionHelper:1>Description:0>#Other:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Other"]
@@ -2903,7 +2903,7 @@ module Gherkin
         build(context, token);
         return 39
       end
-      
+
       state_comment = "State: 39 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:1>DescriptionHelper:2>#Comment:0"
       token.detach
       expected_tokens = ["#EOF", "#Comment", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Empty"]
@@ -2992,7 +2992,7 @@ module Gherkin
         build(context, token);
         return 40
       end
-      
+
       state_comment = "State: 40 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:3>ExamplesDefinition:1>Examples:2>ExamplesTable:0>#TableRow:0"
       token.detach
       expected_tokens = ["#EOF", "#TableRow", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -3012,7 +3012,7 @@ module Gherkin
         build(context, token);
         return 42
       end
-      
+
       state_comment = "State: 42 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:1>DocString:0>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#DocStringSeparator", "#Other"]
@@ -3098,7 +3098,7 @@ module Gherkin
         build(context, token);
         return 43
       end
-      
+
       state_comment = "State: 43 - GherkinDocument:0>Feature:3>Rule:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:1>DocString:2>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#EOF", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -3118,7 +3118,7 @@ module Gherkin
         build(context, token);
         return 44
       end
-      
+
       state_comment = "State: 44 - GherkinDocument:0>Feature:3>Rule:1>Background:2>Step:1>StepArg:0>__alt0:1>DocString:0>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#DocStringSeparator", "#Other"]
@@ -3182,7 +3182,7 @@ module Gherkin
         build(context, token);
         return 45
       end
-      
+
       state_comment = "State: 45 - GherkinDocument:0>Feature:3>Rule:1>Background:2>Step:1>StepArg:0>__alt0:1>DocString:2>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#EOF", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -3202,7 +3202,7 @@ module Gherkin
         build(context, token);
         return 46
       end
-      
+
       state_comment = "State: 46 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:1>DocString:0>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#DocStringSeparator", "#Other"]
@@ -3286,7 +3286,7 @@ module Gherkin
         build(context, token);
         return 47
       end
-      
+
       state_comment = "State: 47 - GherkinDocument:0>Feature:2>ScenarioDefinition:1>Scenario:2>Step:1>StepArg:0>__alt0:1>DocString:2>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#EOF", "#StepLine", "#TagLine", "#ExamplesLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -3306,7 +3306,7 @@ module Gherkin
         build(context, token);
         return 48
       end
-      
+
       state_comment = "State: 48 - GherkinDocument:0>Feature:1>Background:2>Step:1>StepArg:0>__alt0:1>DocString:0>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#DocStringSeparator", "#Other"]
@@ -3368,7 +3368,7 @@ module Gherkin
         build(context, token);
         return 49
       end
-      
+
       state_comment = "State: 49 - GherkinDocument:0>Feature:1>Background:2>Step:1>StepArg:0>__alt0:1>DocString:2>#DocStringSeparator:0"
       token.detach
       expected_tokens = ["#EOF", "#StepLine", "#TagLine", "#ScenarioLine", "#RuleLine", "#Comment", "#Empty"]
@@ -3377,7 +3377,7 @@ module Gherkin
       add_error(context, error)
       return 49
     end
-    
+
     def lookahead_0(context, currentToken)
       currentToken.detach
       token = nil
@@ -3400,7 +3400,6 @@ module Gherkin
 
       return match
     end
-    
 
     private
 

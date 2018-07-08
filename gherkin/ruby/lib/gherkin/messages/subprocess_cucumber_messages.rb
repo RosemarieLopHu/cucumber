@@ -7,7 +7,7 @@ module Gherkin
       def initialize(gherkin_executable, paths, print_source, print_ast, print_pickles)
         @gherkin_executable, @paths, @print_source, @print_ast, @print_pickles = gherkin_executable, paths, print_source, print_ast, print_pickles
       end
-      
+
       def messages
         args = [@gherkin_executable]
         args.push('--no-source') unless @print_source

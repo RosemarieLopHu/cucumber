@@ -6,7 +6,7 @@ module Gherkin
       def initialize(io)
         @io = io
       end
-      
+
       def messages
         Enumerator.new do |y|
           while !@io.eof?
@@ -17,7 +17,7 @@ module Gherkin
           end
         end
       end
-      
+
       # TODO: Maybe use https://github.com/liquidm/varint if available
       def varint(io)
         # https://github.com/ruby-protobuf/protobuf/blob/master/lib/protobuf/varint_pure.rb
