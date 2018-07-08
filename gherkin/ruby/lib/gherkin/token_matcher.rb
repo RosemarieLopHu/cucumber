@@ -17,55 +17,55 @@ module Gherkin
       @indent_to_remove = 0
     end
 
-    def match_TagLine(token)
+    def match_tag_line(token)
       return false unless token.line.start_with?('@')
 
       set_token_matched(token, :TagLine, nil, nil, nil, token.line.tags)
       true
     end
 
-    def match_FeatureLine(token)
+    def match_feature_line(token)
       match_title_line(token, :FeatureLine, @dialect.feature_keywords)
     end
 
-    def match_RuleLine(token)
+    def match_rule_line(token)
       match_title_line(token, :RuleLine, @dialect.rule_keywords)
     end
 
-    def match_ScenarioLine(token)
+    def match_scenario_line(token)
       match_title_line(token, :ScenarioLine, @dialect.scenario_keywords) ||
         match_title_line(token, :ScenarioLine, @dialect.scenario_outline_keywords)
     end
 
-    def match_BackgroundLine(token)
+    def match_background_line(token)
       match_title_line(token, :BackgroundLine, @dialect.background_keywords)
     end
 
-    def match_ExamplesLine(token)
+    def match_examples_line(token)
       match_title_line(token, :ExamplesLine, @dialect.examples_keywords)
     end
 
-    def match_TableRow(token)
+    def match_table_row(token)
       return false unless token.line.start_with?('|')
       # TODO: indent
       set_token_matched(token, :TableRow, nil, nil, nil, token.line.table_cells)
       true
     end
 
-    def match_Empty(token)
+    def match_empty(token)
       return false unless token.line.empty?
       set_token_matched(token, :Empty, nil, nil, 0)
       true
     end
 
-    def match_Comment(token)
+    def match_comment(token)
       return false unless token.line.start_with?('#')
       text = token.line.get_line_text(0) # take the entire line, including leading space
       set_token_matched(token, :Comment, text, nil, 0)
       true
     end
 
-    def match_Language(token)
+    def match_language(token)
       return false unless token.line.trimmed_line_text =~ LANGUAGE_PATTERN
 
       dialect_name = $1
@@ -76,18 +76,18 @@ module Gherkin
       true
     end
 
-    def match_DocStringSeparator(token)
+    def match_doc_string_separator(token)
       if @active_doc_string_separator.nil?
         # open
-        _match_DocStringSeparator(token, '"""', true) ||
-          _match_DocStringSeparator(token, '```', true)
+        _match_doc_string_separator(token, '"""', true) ||
+          _match_doc_string_separator(token, '```', true)
       else
         # close
-        _match_DocStringSeparator(token, @active_doc_string_separator, false)
+        _match_doc_string_separator(token, @active_doc_string_separator, false)
       end
     end
 
-    def _match_DocStringSeparator(token, separator, is_open)
+    def _match_doc_string_separator(token, separator, is_open)
       return false unless token.line.start_with?(separator)
 
       content_type = nil
@@ -104,19 +104,19 @@ module Gherkin
       true
     end
 
-    def match_EOF(token)
+    def match_eof(token)
       return false unless token.eof?
       set_token_matched(token, :EOF)
       true
     end
 
-    def match_Other(token)
+    def match_other(token)
       text = token.line.get_line_text(@indent_to_remove) # take the entire line, except removing DocString indents
       set_token_matched(token, :Other, unescape_docstring(text), nil, 0)
       true
     end
 
-    def match_StepLine(token)
+    def match_step_line(token)
       keywords = @dialect.given_keywords +
                  @dialect.when_keywords +
                  @dialect.then_keywords +

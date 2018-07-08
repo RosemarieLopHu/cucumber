@@ -6,15 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 29
-# Configuration parameters: .
-# SupportedStyles: snake_case, camelCase
-Naming/MethodName:
-  EnforcedStyle: snake_case
-  Exclude:
-    - 'lib/gherkin/parser.rb'
-    - 'lib/gherkin/token_matcher.rb'
-
 # Offense count: 3
 # Configuration parameters: MinNameLength, AllowNamesEndingInNumbers, AllowedNames, ForbiddenNames.
 # AllowedNames: io, id, to, by, on, in, at
