@@ -34,7 +34,7 @@ module Gherkin
 
     def match_ScenarioLine(token)
       match_title_line(token, :ScenarioLine, @dialect.scenario_keywords) ||
-          match_title_line(token, :ScenarioLine, @dialect.scenario_outline_keywords)
+        match_title_line(token, :ScenarioLine, @dialect.scenario_outline_keywords)
     end
 
     def match_BackgroundLine(token)
@@ -80,7 +80,7 @@ module Gherkin
       if @active_doc_string_separator.nil?
         # open
         _match_DocStringSeparator(token, '"""', true) ||
-        _match_DocStringSeparator(token, '```', true)
+          _match_DocStringSeparator(token, '```', true)
       else
         # close
         _match_DocStringSeparator(token, @active_doc_string_separator, false)
