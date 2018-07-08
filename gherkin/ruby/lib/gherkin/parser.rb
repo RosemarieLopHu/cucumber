@@ -55,11 +55,11 @@ module Gherkin
   class Parser
     attr_accessor :stop_at_first_error
 
-    def initialize(ast_builder=AstBuilder.new)
+    def initialize(ast_builder = AstBuilder.new)
       @ast_builder = ast_builder
     end
 
-    def parse(token_scanner, token_matcher=TokenMatcher.new)
+    def parse(token_scanner, token_matcher = TokenMatcher.new)
       token_scanner = token_scanner.is_a?(TokenScanner) ? token_scanner : TokenScanner.new(token_scanner)
 
       @ast_builder.reset

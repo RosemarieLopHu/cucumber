@@ -152,7 +152,7 @@ module Gherkin
       true
     end
 
-    def set_token_matched(token, matched_type, text=nil, keyword=nil, indent=nil, items=[])
+    def set_token_matched(token, matched_type, text = nil, keyword = nil, indent = nil, items = [])
       token.matched_type = matched_type
       token.matched_text = text && text.chomp
       token.matched_keyword = keyword
