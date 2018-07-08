@@ -3421,6 +3421,5 @@ module Gherkin
       end
       default_value
     end
-
   end
 end

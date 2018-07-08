@@ -78,7 +78,6 @@ module Gherkin
         gd[:uri] = source.uri
         Cucumber::Messages::GherkinDocument.new(gd)
       end
-
     end
   end
 end

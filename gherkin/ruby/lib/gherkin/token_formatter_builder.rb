@@ -35,6 +35,5 @@ module Gherkin
               token.matched_text,
               Array(token.matched_items).map { |i| "#{i.column}:#{i.text}"}.join(',')
     end
-
   end
 end
