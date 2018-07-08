@@ -7,12 +7,6 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 1
-# Configuration parameters: AllowSafeAssignment.
-Lint/AssignmentInCondition:
-  Exclude:
-    - 'lib/gherkin/token_scanner.rb'
-
-# Offense count: 1
 Lint/EnsureReturn:
   Exclude:
     - 'spec/capture_warnings.rb'

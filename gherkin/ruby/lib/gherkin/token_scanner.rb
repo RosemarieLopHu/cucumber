@@ -26,7 +26,7 @@ module Gherkin
 
     def read
       location = { line: @line_number += 1, column: 0 }
-      if @io.nil? || line = @io.gets
+      if @io.nil? || (line = @io.gets)
         gherkin_line = line ? GherkinLine.new(line, location[:line]) : nil
         Token.new(gherkin_line, location)
       else
