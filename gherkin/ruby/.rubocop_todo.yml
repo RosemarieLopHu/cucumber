@@ -35,14 +35,6 @@ Performance/RedundantBlockCall:
     - 'spec/capture_warnings.rb'
 
 # Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: braces, no_braces, context_dependent
-Style/BracesAroundHashParameters:
-  Exclude:
-    - 'lib/gherkin/messages/parser_cucumber_messages.rb'
-
-# Offense count: 2
 Style/CaseEquality:
   Exclude:
     - 'bin/gherkin'
