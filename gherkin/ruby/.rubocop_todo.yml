@@ -7,14 +7,6 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: AllowUnusedKeywordArguments, IgnoreEmptyMethods.
-Lint/UnusedMethodArgument:
-  Exclude:
-    - 'lib/gherkin/ast_builder.rb'
-    - 'lib/gherkin/errors.rb'
-
-# Offense count: 3
 Lint/UselessAssignment:
   Exclude:
     - 'lib/gherkin/messages/subprocess_cucumber_messages.rb'
