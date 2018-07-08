@@ -32,7 +32,7 @@ module Gherkin
       end
     end
 
-    def get_result
+    def result
       current_node.get_single(:GherkinDocument)
     end
 

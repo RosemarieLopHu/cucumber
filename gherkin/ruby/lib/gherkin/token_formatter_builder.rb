@@ -18,7 +18,7 @@ module Gherkin
     def end_rule(rule_type)
     end
 
-    def get_result
+    def result
       @tokens_text
     end
 
