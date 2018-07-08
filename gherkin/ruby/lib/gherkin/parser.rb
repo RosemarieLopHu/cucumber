@@ -118,7 +118,6 @@ module Gherkin
       context.token_queue.any? ? context.token_queue.shift : context.token_scanner.read
     end
 
-
     def match_EOF( context, token)
       return handle_external_error(context, false) do
         context.token_matcher.match_EOF(token)
@@ -320,7 +319,6 @@ module Gherkin
         raise InvalidOperationException, "Unknown state: #{state}"
       end
     end
-
 
     # Start
     def match_token_at_0(token, context)
@@ -3380,7 +3378,6 @@ module Gherkin
       add_error(context, error)
       return 49
     end
-
     
     def lookahead_0(context, currentToken)
       currentToken.detach
