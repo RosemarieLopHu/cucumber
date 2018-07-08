@@ -35,7 +35,9 @@ module CaptureWarnings
         loop do
           error << pipe_r.readpartial(1024)
         end
+        # rubocop:disable Lint/HandleExceptions
       rescue EOFError
+        # rubocop:enable Lint/HandleExceptions
       end
     end
     STDERR.reopen(pipe_w)
