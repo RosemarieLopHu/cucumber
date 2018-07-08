@@ -7,11 +7,6 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 2
-Lint/LiteralAsCondition:
-  Exclude:
-    - 'lib/gherkin/parser.rb'
-
-# Offense count: 2
 Lint/Loop:
   Exclude:
     - 'lib/gherkin/messages/protobuf_cucumber_messages.rb'

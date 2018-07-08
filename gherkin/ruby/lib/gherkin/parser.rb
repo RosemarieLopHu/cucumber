@@ -3388,12 +3388,12 @@ module Gherkin
         token.detach
         queue.push(token)
 
-        if (false || match_ExamplesLine(context, token))
+        if match_ExamplesLine(context, token)
           match = true
           break
         end
 
-        break unless (false || match_Empty(context, token) || match_Comment(context, token) || match_TagLine(context, token))
+        break unless (match_Empty(context, token) || match_Comment(context, token) || match_TagLine(context, token))
       end
 
       context.token_queue.concat(queue)
