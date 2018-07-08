@@ -23,6 +23,7 @@ module Gherkin
     end
 
     private
+
     def format_token(token)
       return "EOF" if token.eof?
 
