@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'rake',      '~> 10.5'
-  s.add_development_dependency 'rubocop', '~> 0.58.0'
   s.add_development_dependency 'rspec',     '~> 3.7'
+  s.add_development_dependency 'rubocop', '~> 0.58.0'
 
   # For coverage reports
   s.add_development_dependency 'coveralls'
