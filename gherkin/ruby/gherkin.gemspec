@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 Gem::Specification.new do |s|
   s.name        = 'gherkin'
   s.version     = '5.1.0'
