@@ -6,38 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 57
-Metrics/AbcSize:
-  Max: 118
-
-# Offense count: 1
-# Configuration parameters: CountBlocks.
-Metrics/BlockNesting:
-  Max: 4
-
-# Offense count: 4
-# Configuration parameters: CountComments.
-Metrics/ClassLength:
-  Max: 3182
-
-# Offense count: 49
-Metrics/CyclomaticComplexity:
-  Max: 50
-
-# Offense count: 69
-# Configuration parameters: CountComments.
-Metrics/MethodLength:
-  Max: 140
-
-# Offense count: 4
-# Configuration parameters: CountKeywordArgs.
-Metrics/ParameterLists:
-  Max: 6
-
-# Offense count: 42
-Metrics/PerceivedComplexity:
-  Max: 22
-
 # Offense count: 3
 Naming/AccessorMethodName:
   Exclude:
@@ -357,3 +325,35 @@ Style/TrailingCommaInHashLiteral:
 # URISchemes: http, https
 Metrics/LineLength:
   Max: 177
+
+# Offense count: 57
+Metrics/AbcSize:
+  Max: 118
+
+# Offense count: 1
+# Configuration parameters: CountBlocks.
+Metrics/BlockNesting:
+  Max: 4
+
+# Offense count: 4
+# Configuration parameters: CountComments.
+Metrics/ClassLength:
+  Max: 3182
+
+# Offense count: 49
+Metrics/CyclomaticComplexity:
+  Max: 50
+
+# Offense count: 69
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  Max: 140
+
+# Offense count: 4
+# Configuration parameters: CountKeywordArgs.
+Metrics/ParameterLists:
+  Max: 6
+
+# Offense count: 42
+Metrics/PerceivedComplexity:
+  Max: 22
